@@ -1,0 +1,479 @@
+{
+  "courses": [
+    {
+      "title": "AWS",
+      "description": "The AWS (Amazon Web Services) course offers comprehensive training on cloud computing and AWS services. Participants gain expertise in deploying, managing, and securing scalable cloud solutions using key AWS tools. Covering essential topics like cloud architecture, security, scalability, and cost management, the course equips learners with practical skills to leverage AWS effectively. Ideal for developers, IT professionals, and businesses, mastering AWS opens doors to innovation, efficiency, and competitive advantage in the rapidly evolving digital landscape.",
+      "reruirments": "The AWS course typically requires a foundational understanding of computing concepts and basic familiarity with cloud computing principles. Proficiency in fundamental programming languages like Python or Java is beneficial. Additionally, a grasp of networking fundamentals and familiarity with web services can enhance the learning experience. While prior experience with AWS services is not mandatory, having exposure to cloud platforms and infrastructure can accelerate comprehension and application of advanced AWS concepts." ,
+      "courseFor": "The AWS course is tailored for individuals seeking to gain proficiency in Amazon Web Services (AWS), a leading cloud computing platform. Whether you're an IT professional, developer, system administrator, business professional, or student, this course provides comprehensive training in deploying, managing, and optimizing cloud-based solutions using AWS services. It equips learners with the skills and knowledge necessary to leverage AWS for building scalable applications, managing infrastructure, and driving business innovation.",
+      "Ulearn": "In the AWS (Amazon Web Services) course, you'll delve into the world of cloud computing and learn how to leverage AWS services to build scalable, secure, and cost-effective solutions. You'll gain proficiency in various AWS services such as EC2, S3, Lambda, RDS, and more, mastering concepts like compute, storage, networking, and security in the cloud. Through hands-on labs and real-world projects, you'll understand how to architect cloud infrastructure, deploy applications, and manage resources using AWS tools and technologies. Whether you're an IT professional, developer, or business owner, this course will equip you with the skills needed to harness the power of AWS and accelerate your cloud journey.",
+      "image": "assets/images/aws-dh.png",
+      "expnList": {
+        "Introduction of Cloud Computing & AWS": [
+          "What is cloud computing?",
+          "Fundamentals of AWS",
+          "AWS cloud computing platforms",
+          "Exam Pattern."
+        ],
+        "Introduction to AWS Services": [
+          "Overview of AWS Services",
+          "Importance of AWS Services",
+          "AWS free tier account set up",
+          "AWS pricing models"
+        ],
+
+        "Identity Access Management (IAM)": [
+          "What is IAM?",
+          "Enable MFA & Harden AWS Account",
+          "Creating Users, Groups, Roles & Policies (Web console access vs programmatic access)",
+          "Access Keys & Secret Access Keys"
+        ],
+      
+        "Simple Storage Service" : [
+          "Introduction to S3 and Amazon Glacier",
+          "S3 Storage Tiers/Classes",
+          "Create an S3 Bucket",
+          "S3 Version Control",
+          "Cross-Region Replication",
+          "S3 Lifecycle Management",
+          "Retrieve a file from Glacier",
+          "Static Website Hosting using S3",
+          "S3 Transfer Acceleration",
+          "S3 Security & Encryption",
+          "Storage Gateway",
+          "SnowBall"
+        ],
+        "CloudFront": [
+          "Creating a Load Balancer",
+          "Internal and External Load Balancer",
+          "Security groups for the load Balancer",
+          "Configure health check for the Load Balancer",
+          "Adding multiple instance for the Load Balancer",
+          "Cross zone Load Balancing",
+          "Connection Draining"
+      ]
+      }
+    },
+    {
+      "title": "Salesforce",
+      "description": "Salesforce is a powerful cloud-based CRM platform that revolutionizes how businesses manage customer relationships and drive sales. With its intuitive interface and robust features, Salesforce empowers organizations to streamline processes, automate tasks, and gain valuable insights into customer behavior. From lead generation to customer support, Salesforce offers a comprehensive suite of tools tailored to meet the diverse needs of modern businesses. Whether you're a sales professional, marketer, or customer service agent, Salesforce equips you with the tools you need to succeed in today's competitive landscape.",
+      "reruirments": "Salesforce requires a basic understanding of CRM concepts and familiarity with cloud computing principles. Proficiency in navigating software applications and strong communication skills are beneficial. Additionally, knowledge of sales and marketing processes can be advantageous for leveraging Salesforce's capabilities effectively." ,
+      "courseFor": "The Salesforce course is designed for individuals aiming to master customer relationship management (CRM) tools and cloud-based solutions. It covers essential topics such as Salesforce administration, customization, and development. Participants will learn to configure Salesforce applications, automate business processes, and analyze data to drive informed decisions. With hands-on projects and real-world scenarios, this course equips learners with the skills needed to succeed in Salesforce-related roles and maximize business productivity.",
+      "Ulearn": "In the Salesforce course, you'll gain proficiency in various aspects of Salesforce, including administration, customization, and development. You'll learn how to configure Salesforce applications to meet specific business requirements, automate processes using workflows and triggers, and customize the platform to enhance user experience. Additionally, you'll delve into Salesforce development, mastering Apex programming language and Visualforce pages to build custom applications and extend Salesforce functionality. Through practical projects and hands-on exercises, you'll acquire the skills needed to leverage Salesforce effectively and drive business success.",
+      "image":"assets/images/saleforce-dh.jpg",
+      "expnList": {
+        "Fundamentals of Salesforce" : [
+          "CRM basics and cloud computing",
+          "Salesforce.com overview and foundation",
+          "Salesforce platform, Salesforce terminology, and introduction to force.com platform",
+          "Multi-tenancy and cloud",
+         " Salesforce metadata and APIs",
+          "Salesforce architecture",
+          "The functionality of a central CRM object in Salesforce schema",
+          "Determining declarative custom restrictions and programmatic custom use cases in a given scenario",
+          "Declarative vs. Programmatic customizations",
+          "Identify common scenarios for using the AppExchange extension organization",
+          "OOP programming and database connections in Python"
+        ],
+        "Data Modeling and Management": [
+          "Identify appropriate data models in a given scenario",
+          "Capabilities of different relationship types and the impact of each record access, reporting, and user interface.",
+          "Identify considerations for changing the field type. Determine considerations and select the appropriate field type based on many requirements.",
+          "Describe the features and considerations of the schema builder.",
+          "Illustrate options and considerations for importing/exporting data.",
+          "Describe the features and use cases of external objects under Salesforce.",
+          "Trust, data model, field and relationship fields.",
+          "Pattern generator, junction object, and business logic.",
+          "Salesforce data management, data import wizard and data loader.",
+          "Export data, Apex class variables, and methods.",
+          "Class constructor, Apex, and access modifier.",
+          "Apex development tools, development process, and governor boundaries."
+        ],
+        "Backing up and sharing data": [
+          "Describe the available features and ways to limit and extend objects, field access, and records",
+          "Identify appropriate release solutions based on many business needs",
+          "Salesforce application development tools",
+          "Application development strategy using AppExchange",
+          "Search and navigate Salesforce documents"
+        ],
+        "Business logic & process automation": [
+          "Record type",
+          "Formula fields",
+          "Of roll-up summary fields",
+          "Validation rules",
+          "Approval process",
+          "Workflow, visual workflow and Lightning process builder"
+          
+        ],
+        "Salesforce development": [
+          "Describe development considerations in a multi-tenant environment",
+          "Describe how the Salesforce platform features map to MVC patterns, sharing, ‘this’ keyword, inheritance, and interfaces.",
+          "System classes/methods, field API names, and standard objects.",
+         "Relationships in Apex; basic SOQL syntax, functions, variable binding, keywords, relational queries, and SOQL-for-loops, SOQL Debugging with debug logs, and anonymous blocking.",
+          "SOSL and SOSL",
+         "Debugging tools",
+          "Apex testing, testing classes, and unit testing",
+          "System testing class methods",
+          "Test classes, test data, unit testing using private variables and methods"
+          
+        ]
+
+      }
+    },
+   
+    {
+      "title": "Data Science with Python",
+      "description": "The Data Science with Python course offers comprehensive training in utilizing Python for data analysis, machine learning, and statistical modeling. Participants will learn how to manipulate and analyze large datasets, extract valuable insights, and build predictive models using Python's powerful libraries such as NumPy, Pandas, Matplotlib, and scikit-learn. With a focus on practical application and real-world examples, this course equips learners with the skills needed to tackle complex data science projects and drive business decisions through data-driven insights.",
+      "reruirments": "The requirements for the Data Science with Python course include a fundamental understanding of statistics and proficiency in programming languages such as Python. Familiarity with concepts related to data manipulation, visualization, and machine learning is essential for effective data analysis." ,
+      "courseFor": "The Data Science with Python course is tailored for individuals aiming to enhance their skills in data analysis and machine learning using Python. Whether you're a novice or have prior experience, this course equips you with the tools to tackle real-world data challenges effectively. You'll gain proficiency in data manipulation, statistical analysis, and machine learning algorithms, enabling you to extract valuable insights from complex datasets and drive impactful decisions across various industries.",
+      "Ulearn": "In the Data Science with Python course, you'll dive into the dynamic world of data analysis, equipped with Python as your primary tool. You'll start by mastering Python's fundamentals, then progress to exploring essential data science concepts like data wrangling, statistical analysis, and machine learning algorithms. Through hands-on projects, you'll learn to extract actionable insights from data, visualize your findings, and build predictive models. By course completion, you'll possess the skills to tackle real-world data challenges, making informed decisions and driving impactful outcomes in various industries.",
+      "image": "assets/images/python-datascience-dh.jpg",
+      "expnList": {
+        "Introduction to Data Science With Python": [
+          "What is analytics & Data Science?",
+         "Common Terms in Analytics",
+          "Analytics vs. Data warehousing, OLAP, MIS Reporting",
+          "Relevance in industry and need of the hour",
+          "Types of problems and business objectives in various industries",
+          "How leading companies are harnessing the power of analytics?",
+          "Critical success drivers",
+          "Overview of analytics tools & their popularity",
+         "Analytics Methodology & problem solving framework",
+          "List of steps in Analytics projects",
+          "Identify the most appropriate solution design for the given problem statement",
+         "Project plan for Analytics project & key milestones based on effort estimates",
+         "Build Resource plan for analytics project",
+          "Why Python for data science?"
+        ],
+        "PYTHON: ESSENTIALS (CORE)": [
+          "Overview of Python- Starting with Python",
+          "Introduction to installation of Python",
+          "Introduction to Python Editors & IDE's(Canopy, pycharm, Jupyter, Rodeo, Ipython etc…)",
+          "Understand Jupyter notebook & Customize Settings",
+          "Concept of Packages/Libraries - Important packages(NumPy, SciPy, scikit-learn, Pandas, Matplotlib, etc)",
+          "Installing & loading Packages & Name Spaces",
+          "Data Types & Data objects/structures (strings, Tuples, Lists, Dictionaries)",
+          "List and Dictionary Comprehensions",
+          "Variable & Value Labels –  Date & Time Values",
+          "Basic Operations - Mathematical - string - date",
+          "Reading and writing data",
+          "Simple plotting",
+          "Control flow & conditional statements",
+          "Debugging & Code profiling",
+          "How to create class and modules and how to call them?"
+        ],
+
+        "SCIENTIFIC DISTRIBUTIONS USED IN PYTHON FOR DATA SCIENCE": [
+          "Numpy, scify, pandas, scikitlearn, statmodels, nltk etc "
+        ],
+
+      "ACCESSING/IMPORTING AND EXPORTING DATA USING PYTHON MODULES": [
+        "Importing Data from various sources (Csv, txt, excel, access etc)",
+        " Database Input (Connecting to database)",
+        "Viewing Data objects - subsetting, methods",
+        "Exporting Data to various formats",
+        "Important python modules: Pandas, beautifulsoup"
+      ],
+
+      "DATA ANALYSIS  VISUALIZATION USING PYTHON": [
+        "Introduction exploratory data analysis",
+        "Descriptive statistics, Frequency Tables and summarization",
+        "Univariate Analysis (Distribution of data & Graphical Analysis)",
+        "Bivariate Analysis(Cross Tabs, Distributions & Relationships, Graphical Analysis)",
+        "Creating Graphs- Bar/pie/line chart/histogram/ boxplot/ scatter/ density etc)",
+        "Important Packages for Exploratory Analysis(NumPy Arrays, Matplotlib, seaborn, Pandas and scipy.stats etc)"
+      ],
+
+      "INTRODUCTION TO STATISTICS" : [
+       " Basic Statistics - Measures of Central Tendencies and Variance",
+        "Building blocks - Probability Distributions - Normal distribution - Central Limit Theorem",
+        "Inferential Statistics -Sampling - Concept of Hypothesis Testing",
+       " Statistical Methods - Z/t-tests( One sample, independent, paired), Anova, Correlations and Chi-square",
+        "Important modules for statistical methods: Numpy, Scipy, Pandas"
+      ],  
+      
+      "INTRODUCTION TO PREDICTIVE MODELING" :[
+        "Concept of model in analytics and how it is used?",
+       " Common terminology used in analytics & modeling process",
+        "Popular modeling algorithms",
+        "Types of Business problems - Mapping of Techniques",
+        "Different Phases of Predictive Modeling"
+      ]
+   }
+    },
+
+    {
+      "title": "RPA",
+      "description": "RPA (Robotic Process Automation) is a transformative technology that enables organizations to automate repetitive tasks, streamline business processes, and improve operational efficiency. In essence, RPA software robots mimic human actions to interact with digital systems, performing tasks such as data entry, document processing, and workflow automation with speed and accuracy. By deploying RPA solutions, businesses can reduce manual effort, minimize errors, and enhance productivity across various functions, from finance and HR to customer service and supply chain management. With RPA, organizations can unlock new levels of efficiency, agility, and innovation, driving digital transformation and competitive advantage in today's rapidly evolving landscape.",
+      "reruirments": "RPA (Robotic Process Automation) offers a transformative approach to business operations by automating repetitive tasks through software robots. With RPA, organizations can enhance efficiency, reduce errors, and accelerate processes across various departments, including finance, HR, and customer service. To implement RPA effectively, organizations typically require a solid understanding of their existing processes and the potential for automation. Additionally, investment in RPA technology platforms and skilled personnel is essential to ensure successful deployment and optimization of automation solutions. By embracing RPA, organizations can unlock new levels of productivity and innovation while empowering employees to focus on high-value tasks." ,
+      "courseFor": "The RPA (Robotic Process Automation) course is designed for professionals across various industries seeking to streamline business processes and drive digital transformation initiatives. Specifically, it caters to individuals involved in operations management, business analysis, IT, and automation strategy. Whether you are a business leader exploring innovative solutions to enhance efficiency or an IT professional looking to specialize in automation technologies, this course equips you with the knowledge and skills needed to leverage RPA effectively within your organization.",
+      "Ulearn":"In the RPA (Robotic Process Automation) course, you'll dive into the world of automation, mastering the art of designing, building, and deploying software robots to automate repetitive tasks. From understanding RPA fundamentals to hands-on bot development, you'll learn to streamline workflows, increase efficiency, and drive digital transformation across industries. By the end of the course, you'll be equipped with the skills to revolutionize business processes, optimize productivity, and unlock new opportunities with the power of RPA technology.",
+      "image":"assets/images/RPA-dh.jpg",
+      "expnList":{
+        "Introduction to RPA(Robotic process Automation)": [
+          "What is RPA?",
+          "Google trend report on RPA and Openspan, Pega robotics",
+          "What is the scope of this RPA course?",
+          "Why do we need RPA?",
+          "Will RPA cut jobs?",
+          "Is RPA a Hype or is it Real?",
+          "Where does Pega robotics stand (Compared to other competitors)?",
+          "Google trend report on Competitors and comparison",
+          "Naukri and Monster job openings",
+          "Salary report from Indeed & Payscale",
+          "RPA vs AI",
+          "A walkthrough on the course content."
+        ],
+        " What is Openspan": [
+          "Short Openspan Demo with a Real time Project",
+          "Navigation",
+          "What is the scope of Openspan Training",
+          "Important options and Shortcuts in the tool",
+          "Types of Tools in Openspan (Walkthrough)",
+          "What’s the Architecture, SOA, Client server or Cloud",
+          "Openspan Cloud?"
+        ],
+        "Installation of Openspan": [
+          "Supported Systems (Is Windows, Linux, Mac supported)",
+          "What is the Alternative it it’s not Supported(Virtualbox)",
+          "Supported Databases",
+          "Integration with other tools."
+        ],
+        "Modules in Openspan" : [
+          "Windows Integration",
+          "Interaction Framework",
+         "Web Integration",
+          "Project Deployment",
+         " Diagnostics and Debugging"          
+        ],
+        "Windows Integration":[
+          "Getting Started with Studio",
+         "Recommended for Solution Building",
+         "Developing Open Span Solutions and Projects",
+          "Defining Windows Adapter Design Properties",
+          "Working with the Windows Adapter",
+          "Recommended for Solution Development",
+         "Working with Open Span Automations",
+          "Working with MDI Child Windows"
+        ],
+        "Interaction Framework": [
+          "Working with Interaction Framework",
+          "Working with Activities and Active MDI Windows"
+        ],
+        "Web Integration": [
+          "Defining Web Adapter Properties",
+          "Defining Events and Methods",
+          "Using the Web Adapter",
+          "Interrogating a Web Application",
+          "Working with Web Adapter Match Rules",
+          "Automating the Training Web Site"
+        ],
+
+        "Agile Desktop and Deployment": [
+          "Using the Agile Desktop Framework",
+         "Building Project Files",
+          "Deploying Open Span Solutions",
+          "Using Configuration Project Items",
+          "Using Open Span Management Console"
+        ],
+        "Diagnostics and Debugging ": [
+          "Debugging Open Span Projects",
+          "Using Studio’s Diagnostics Publishers",
+          "Handling Errors"
+        ],
+        " CanopY project in RPA": [
+          "Project Overview",
+          "How to configure an End to end real-time project.",
+          "Project Guidance",
+         " Project Submission and Verification"
+        ]
+      }
+    },
+
+    {
+      "title": "Selenium",
+      "description": "This course is designed to train the beginners, intermediate and professional testers with the basics of testing web applications using Selenium. The focus is on the practical application of selenium to resolve common web automated testing challenges. We introduce WebDriver and advanced topics for experienced delegates to take you to Selenium WebDriver superstar status. We explore Jenkins CI integration, Page Objects, Excel and WebDriver for data driven examples, Selenium Grid, Source Control SVN integration & GIT hub.",
+      "reruirments": "To effectively utilize Selenium for web automation, familiarity with programming languages such as Python, Java, C#, or JavaScript is essential. Understanding of HTML, CSS, and DOM manipulation is crucial for identifying and interacting with web elements. Proficiency in test automation frameworks like TestNG or JUnit aids in structuring and executing test scripts efficiently. Additionally, knowledge of version control systems such as Git and continuous integration tools like Jenkins facilitates collaboration and automated testing pipelines. A strong grasp of software testing principles, including test design techniques and debugging skills, enhances the effectiveness of Selenium test automation efforts. Overall, a combination of programming proficiency, web development knowledge, and testing expertise forms the foundation for successful Selenium usage.",
+      "courseFor": "Th couris  offers comprehensive training in web automation testing, empowering participants with the skills to create robust and efficient automated tests. Covering essential topics such as Selenium WebDriver, test frameworks, and best practices, the course equips learners with the tools to automate browser interactions and verify application functionality. Participants gain hands-on experience in writing Selenium scripts using programming languages like Java, Python, or C#, and learn to integrate Selenium with popular testing frameworks like TestNG or JUnit. With practical exercises and real-world projects, the course prepares individuals to tackle web testing challenges and accelerate their career in software quality assurance.",
+      "Ulearn": "In this course, participants learn how to automate web browser interactions and perform functional testing of web applications using Selenium WebDriver. They gain proficiency in writing test scripts in languages like Java, Python, or C#, and acquire skills in identifying and interacting with web elements to verify application functionality. Additionally, learners explore best practices in test automation and integration with testing frameworks to streamline the software testing process effectively.",
+      "image": "assets/images/selenium-dh.png",
+      "expnList":{
+        "Introduction": [
+          "What is Automation Testing?",
+          "When to start automation?",
+          " When not to go for automation?",
+          "What are the advantages of automation testing?",
+          "What is Selenium",
+          "What are the advantages of selenium?",
+          "Difference between Selenium and QTP?"
+        ],
+        "Java for Selenium": [
+          "Introduction to Java",
+          "Installing JDK",
+          "Configuring Eclipse IDE",
+          "Creating Java Project",
+          "Sample Java Program",
+          "Classes and Objects",
+          "Downloading Selenium server jar",
+          "Configuring Selenium into the Java Project",
+          "Conditional Statements in Java",
+          "Loops in Java",
+          " Arrays in Java",
+          " Array List in Java",
+          "Methods in Java",
+          "Utility Functions in Java",
+          " Local and Global variables in Java",
+          "Static and Instance Variables in Java",
+          "Hash Set in Java",
+          " Method Overloading in Java",
+          "Constructors in Java.",
+          "Inheritance in Java",
+          "Interfaces in Java.",
+          "Packages in Java."
+        ],
+        "Selenium IDEIntroduction": [
+          "Installation and Introduction to IDE",
+          "Creating first script using record and playback",
+          "Installation of Inspector Tools and its Uses.",
+          "Installation and Introduction to IDE",
+          "Creating first script using record and playback",
+          " Installation of Inspector  Tools and its Uses.",
+          "Generating Scripts using different Web  Elements",
+          " Handling Wait Commands",
+          "Handling Validations Commands",
+          "Handling Store Commands",
+          "Limitations of IDE"
+        ],
+        "How to do Browser settings by using Option Classes": [
+          "ChromeOptions, FirefoxOptions, EdgeOptions and Internet Explorer Options Classes",
+          "Browser Logs -Disabling/Writing to File",
+          " Disabling notifications",
+          "maximizing",
+          " Disabling info-bars",
+          "Page Load Strategy",
+          " Managing https Certificate Errors"
+        ]
+      }
+    },
+    {
+      "title": "Devops",
+      "description": "DevOps is a software development methodology that emphasizes collaboration, automation, and integration between development and IT operations teams. It aims to streamline the software delivery process, from code development to deployment, by fostering a culture of continuous integration, delivery, and feedback.",
+      "reruirments": "In requirements for DevOps include proficiency in version control systems like Git, expertise in automation tools such as Jenkins or Travis CI, and understanding of containerization technologies like Docker and Kubernetes." ,
+      "courseFor": "This course covers essential skills and tools for streamlining software development and deployment. Participants learn version control with Git, automation using Jenkins or Travis CI, and containerization with Docker and Kubernetes. Through hands-on exercises, they gain proficiency in continuous integration, deployment pipelines, and efficient application packaging, enabling them to drive innovation and efficiency in software development workflows.",
+      "Ulearn": "In the DevOps course, participants will learn key skills and tools vital for optimizing software development and deployment processes. This includes mastering version control systems like Git, automation using Jenkins or Travis CI, and containerization with Docker and Kubernetes. Through practical exercises, participants will develop proficiency in continuous integration, deployment pipelines, and efficient application packaging, equipping them to drive innovation and efficiency in software development workflows.",
+      "image": "assets/images/devops-dh.jpg",
+      "expnList": {
+        "Introduction to Cloud Computing": [
+          "What is cloud computing?",
+          "History of cloud",
+          "Different vendors for Cloud",
+          "Cloud main objectives",
+          "IaaS, PaaS, SaaS Overview",
+          "AWS Architecture",
+          "AWS Management Console",
+          "Setting up of the AWS Account",
+          "Features of AWS cloud"
+        ],
+        "Introduction to Devops": [
+          "Software Development Life Cycle/Agile",
+          " What is Devops",
+          "Why Devops?",
+          "Devops vs Release Management",
+          "Devops LifeCycle Phase"
+        ],
+        "Basic of Networking": [
+          "What is Networking",
+          "IP address Basic",
+          "Classess of IP",
+          "Subnetting",
+          "Public / Private IP",
+          "Natting/ Patting",
+          "IP V6 Implementation"
+        ],
+        "Basic of linux Admin" : [
+          "Introduction to UNIX & LINUX",
+          "Installation of Linux",
+          "Access the command line",
+          "Manage files from the command line",
+          "Advanced File Permissions",
+          "Disk Partitioning and Mounting File System",
+          "Shell Scripting"
+        ]
+      }
+
+    },
+    {
+      "title": "Data Science",
+      "description": "Data science is the practice of deriving insights and knowledge from data through advanced analytics techniques. It involves collecting, processing, and analyzing large datasets to uncover patterns, trends, and relationships that can inform decision-making. Data scientists use a combination of statistical analysis, machine learning, and domain expertise to extract actionable insights and drive business outcomes. By harnessing the power of data, organizations can gain a competitive edge, optimize processes, and make informed strategic decisions.",
+      "reruirments": "Basic understanding of statistics and programming languages like Python is required. Familiarity with data manipulation, visualization, and machine learning concepts is essential for effective data analysis." ,
+      "courseFor": "This course is designed for aspiring data scientists looking to gain proficiency in statistical analysis, programming, and machine learning techniques. Whether you're a beginner or have some experience, this course will equip you with the skills needed to tackle real-world data challenges and drive impactful insights in various industries.",
+      "Ulearn": "You'll learn essential data science concepts such as data wrangling, statistical analysis, and machine learning algorithms. Additionally, you'll gain practical experience in data visualization and interpretation to effectively extract insights from complex datasets.",
+      "image": "assets/images/data-science-dh.jpg",
+      "cuTitle1": "Introduction of Cloud Computing & AWS"
+    },
+    {
+      "title": "Python",
+      "image": "assets/images/python-dh.jpg",
+      "reruirments": "In this course requirements are minimal, typically including the installation of the Python interpreter and a text editor or integrated development environment (IDE). Additionally, familiarity with basic programming concepts such as variables, data types, loops, and functions is beneficial for learning Python effectively.",
+      "description": "Python is a versatile programming language known for its simplicity and readability, making it ideal for various applications such as web development, data analysis, artificial intelligence, and automation. With its extensive libraries and frameworks, Python enables developers to build scalable and robust solutions efficiently, contributing to its widespread adoption in the industry and its role as a go-to language for both beginners and experienced programmers.",
+      "courseFor": "The Python course is designed for individuals seeking to learn programming fundamentals and expand their skills in Python development. It caters to beginners aiming to grasp core concepts like syntax and data structures, as well as to experienced developers looking to deepen their knowledge in areas such as web development, data analysis, or machine learning using Python's extensive libraries and frameworks.",
+      "Ulearn": "In the Python course, participants will learn fundamental programming concepts such as variables, data types, loops, and functions, as well as advanced topics including object-oriented programming and handling exceptions. They will also explore Python's vast ecosystem through hands-on projects, gaining skills in web development, data analysis, automation, and more, making them proficient Python developers. ",
+      "expnList" :{
+        "Installing & Running Python": [
+          "Python 2.7 vs Python 3",
+          "Local Environment Setup",
+          "Installing Python on different Platforms(Windows and Linux)",
+          "Python Interpreter and Python Interactive Shell",
+          " Python IDE(Pydev,Pycharm,VIM)"
+        ],
+        "Introduction": [
+          "Python Overview",
+          "History Of Python",
+          "Cpython,Jython,PyPy",
+          "Python Features",
+          "Areas Of Application of Python",
+          "Understanding More About Python",
+          "Writing your First Python Program",
+          "Interactive Mode Programming",
+          "Script Mode Programming",
+          "Dir and help: Getting help from the Python interpreter."
+        ],
+        "Python Syntax ,Keywords and Operators": [
+          " Python Identifiers",
+          "Various Operators and Operators Precedence",
+          "Reserved Words,Lines and Indentation",
+          "Multi-Line Statements,Quotation in Python",
+          "Comments in Python,Using Blank Lines",
+          "Command Line Arguments",
+          "Python Input/Output:Using the Print Functi",
+          "Getting Input from User",
+          "Python Basic Data Types And Variables"
+        ],
+        "Expressions, Statements, Variables": [
+          "Working With Numbers",
+          "Working With Booleans",
+          "Working with Strings",
+          "String types and formatting",
+          "Program to find duplicate characters in a String.",
+          "Program to reverse a string",
+          "Program to check if String is Palindrome",
+          "program to remove a newline in Python",
+          "Mini Project :",
+          "Dice Rolling Simulator"
+        ],
+        "Python Data Types: List,Tuples,Dictionaries": [
+          "Python Lists,Tuples,Dictionaries",
+          "Accessing Values",
+          "Basic Operations",
+          "Indexing, Slicing, and Matrixes",
+          "Built-in Functions & Methods",
+          "Exercises on List,Tuples And Dictionary",
+          "Remove Duplicate from Lists",
+          "Program to find the index of an item of a ",
+          "Python program to convert a list to a tuple",
+          "Python program to reverse a tuple",
+          "program to convert a tuple to a dictionary"
+        ]
+      }
+    }
+  ]
+}
