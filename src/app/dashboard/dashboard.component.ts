@@ -15,10 +15,12 @@ export class DashboardComponent {
     { img: "assets/images/aws-dh.png", heading: "AWS" },
     { img: "assets/images/python-datascience-dh.jpg", heading: "Data Science With Python" },
     { img: "assets/images/devops-dh.jpg", heading: "Devops" },
-    { img: "assets/images/python-dh.jpg", heading: "Python" },
+    { img: "assets/images/python-training-emexo.png", heading: "Python" },
     { img: "assets/images/RPA-dh.jpg", heading: "RPA" },
-    { img: "assets/images/saleforce-dh.jpg", heading: "Saleforce" },
+    { img: "assets/images/Salesforce-logo.png", heading: "Saleforce" },
     { img: "assets/images/selenium-dh.png", heading: "Selenium" },
+    { img: "assets/images/blockchain-technology.jpg", heading: "Block Chain" },
+    { img: "assets/images/scrum-master.jpg", heading: "Scrum Master" },
 ];
   slideConfig = {
     "slidesToShow": 4, 

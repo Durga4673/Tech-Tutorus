@@ -1,5 +1,5 @@
 .cardFeature {
-  padding: 32px;
+  padding: 27px;
   overflow: hidden;
   position: relative;
   border-radius: 5px;
@@ -7,6 +7,7 @@
   background-color: #fff;
   transition: all 0.2s linear;
   border: 1px solid #ebebf2;
+  max-height: 280px;
 }
 
 .cardFeature__icon--bg-g {
@@ -228,7 +229,7 @@
 }
 
 .main-banner {
-  padding-bottom: 200px;
+  // padding-bottom: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -239,8 +240,8 @@
 }
 
 .font-title--lg {
-  font-size: 56px;
-  color: #202029;
+  font-size: 47px;
+  color: #fff;
   font-weight: 600;
   line-height: 70px;
 }
@@ -250,8 +251,8 @@
 }
 
 .banner-two-start p {
-  max-width: 525px;
-  color: #666575;
+  max-width: 630px;
+  color: #fff;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 30px;
@@ -332,7 +333,7 @@ a, a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
 .contentCard-top img {
   width: inherit;
   height: inherit;
-  object-fit: cover;
+  // object-fit: cover;
 }
 
 .font-title--card {
@@ -417,11 +418,14 @@ a, a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
   background-color: #1089ff;
 }
 
+.button--orange{
+  background-color: #FFCD82;
+}
 .button {
   display: inline-block;
   padding: 12px 19px;
   border: 0px;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 19.2px;
   border-radius: 4px;
   color: #fff;

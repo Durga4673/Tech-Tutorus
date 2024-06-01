@@ -15,6 +15,7 @@ ul {
     border: 1px solid #dddddd;
     padding: 40px 25px;
     transition: all 0.3s ease 0s;
+    max-height: 325px;
 }
 
 .mb-30 {
@@ -270,7 +271,7 @@ li {
 }
 
 .about-feature.dark-feature p {
-    color: #8f8fa3 !important;
+    color: #fff;
 }
 
 .about-feature p {
@@ -283,6 +284,7 @@ p {
 .service-item {
     background: #cdf5fa;
     transition: .5s;
+    height: 400px;
 }
 .service-item:hover {
     margin-top: -10px;
@@ -293,4 +295,11 @@ p {
 }
 .service-item i{
     color: #06BBCC !important;
+}
+.tech-listItems li {
+    margin-bottom: 0.8rem;
+}
+
+.tech-listItems li:last-child {
+    margin-bottom: 0; 
 }

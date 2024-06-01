@@ -59,7 +59,7 @@
       "reruirments": "Salesforce requires a basic understanding of CRM concepts and familiarity with cloud computing principles. Proficiency in navigating software applications and strong communication skills are beneficial. Additionally, knowledge of sales and marketing processes can be advantageous for leveraging Salesforce's capabilities effectively." ,
       "courseFor": "The Salesforce course is designed for individuals aiming to master customer relationship management (CRM) tools and cloud-based solutions. It covers essential topics such as Salesforce administration, customization, and development. Participants will learn to configure Salesforce applications, automate business processes, and analyze data to drive informed decisions. With hands-on projects and real-world scenarios, this course equips learners with the skills needed to succeed in Salesforce-related roles and maximize business productivity.",
       "Ulearn": "In the Salesforce course, you'll gain proficiency in various aspects of Salesforce, including administration, customization, and development. You'll learn how to configure Salesforce applications to meet specific business requirements, automate processes using workflows and triggers, and customize the platform to enhance user experience. Additionally, you'll delve into Salesforce development, mastering Apex programming language and Visualforce pages to build custom applications and extend Salesforce functionality. Through practical projects and hands-on exercises, you'll acquire the skills needed to leverage Salesforce effectively and drive business success.",
-      "image":"assets/images/saleforce-dh.jpg",
+      "image":"assets/images/salesforce-cloud-logo.jpg",
       "expnList": {
         "Fundamentals of Salesforce" : [
           "CRM basics and cloud computing",
@@ -412,7 +412,7 @@
     },
     {
       "title": "Python",
-      "image": "assets/images/python-dh.jpg",
+      "image": "assets/images/python-training-emexo.png",
       "reruirments": "In this course requirements are minimal, typically including the installation of the Python interpreter and a text editor or integrated development environment (IDE). Additionally, familiarity with basic programming concepts such as variables, data types, loops, and functions is beneficial for learning Python effectively.",
       "description": "Python is a versatile programming language known for its simplicity and readability, making it ideal for various applications such as web development, data analysis, artificial intelligence, and automation. With its extensive libraries and frameworks, Python enables developers to build scalable and robust solutions efficiently, contributing to its widespread adoption in the industry and its role as a go-to language for both beginners and experienced programmers.",
       "courseFor": "The Python course is designed for individuals seeking to learn programming fundamentals and expand their skills in Python development. It caters to beginners aiming to grasp core concepts like syntax and data structures, as well as to experienced developers looking to deepen their knowledge in areas such as web development, data analysis, or machine learning using Python's extensive libraries and frameworks.",

@@ -102,3 +102,16 @@ a {
 .fill-white {
   color: white;
 }
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info .icon {
+  margin-right: 16px; 
+}
+
+.contact-info .numbers p {
+  margin: 0;
+  padding: 0;
+}
