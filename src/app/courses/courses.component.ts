@@ -58,6 +58,14 @@ export class CoursesComponent {
       title: 'Scrum Master',
       imgSrc: 'assets/images/scrum-master.jpg',
     },
+    { 
+      title: 'Mule Soft',
+      imgSrc: 'assets/images/mulesoft.jpg',
+    },
+    { 
+      title: 'Power BI',
+      imgSrc: 'assets/images/power-BI.jpg',
+    },
   
   ];
 
