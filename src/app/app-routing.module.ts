@@ -10,13 +10,13 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: DashboardComponent },
-  {path: 'courses', component: CoursesComponent},
-  {path: 'aboutus', component: AboutUsComponent},
-  {path: 'registerUS', component: RegisterComponentComponent},
-  {path: 'blog', component: BlogComponent},
-  { path: 'blog/:title', component: BlogCardComponent },
-  { path: 'courses/:title', component: CourseDetailComponent },
+  { path: 'home', component: DashboardComponent, data: { title: 'Online Traning Portal' } },
+  { path: 'courses', component: CoursesComponent, data: { title: 'Courses' } },
+  { path: 'aboutus', component: AboutUsComponent, data: { title: 'About Us' } },
+  { path: 'registerUS', component: RegisterComponentComponent, data: { title: 'Register' } },
+  { path: 'blog', component: BlogComponent, data: { title: 'Blog' } },
+  { path: 'blog/:title', component: BlogCardComponent, data: { title: 'Blog Details' } },
+  { path: 'courses/:title', component: CourseDetailComponent, data: { title: 'Course Details' } },
 ];
 
 @NgModule({
