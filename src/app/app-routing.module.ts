@@ -10,7 +10,7 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: DashboardComponent, data: { title: 'Online Traning Portal' } },
+  { path: '', component: DashboardComponent, data: { title: 'Online Traning Portal' } },
   { path: 'courses', component: CoursesComponent, data: { title: 'Courses' } },
   { path: 'aboutus', component: AboutUsComponent, data: { title: 'About Us' } },
   { path: 'registerUS', component: RegisterComponentComponent, data: { title: 'Register' } },

@@ -72,55 +72,23 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade active show" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     <div class="row">
-                        <!-- <div class="col-xl-4 col-md-6">
+                        <div class="col-xl-4 col-md-6" *ngFor="let card of cards" style="cursor: pointer;">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
-                                    <a href="#">
-                                        <img src="assets/images/data-science-dh.jpg" alt="images" class="img-fluid"></a>
+                                    <a (click)="goToCourseDetail(card.title)">
+                                        <img [src]="card.imgSrc" alt="images" class="img-fluid">
+                                    </a>
                                 </div>
                                 <div class="contentCard-bottom">
-                                    <h5>
-                                        <a href="#" class="font-title--card">Data Science</a>
+                                    <h5 class="text-center">
+                                        <a (click)="goToCourseDetail(card.title)" class="font-title--card">{{ card.title }}</a>
                                     </h5>
-                                    <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="#" class="contentCard-user d-flex align-items-center">
-                                            <img src="https://wdpf54.tech/elearning/public/uploads/users/Instructor_Burhan Uddin Fuad_137.jpg"
-                                                alt="client-image" class="rounded-circle" height="34" width="34">
-                                            <p class="font-para--md">Burhan Uddin Fuad</p>
-                                        </a>
-                                        <div class="price">
-                                            <span>5000.00</span>
-                                        </div>
-                                    </div>
-                                    <div class="contentCard-more">
-                                        <div class="d-flex align-items-center">
-                                            <div class="icon">
-                                                <img src="assets/images/star.png" alt="star">
-                                            </div>
-                                            <span>4.5</span>
-                                        </div>
-                                        <div class="eye d-flex align-items-center">
-                                            <div class="icon">
-                                                <img src="assets/images/eye.png" alt="eye">
-                                            </div>
-                                            <span>24,517</span>
-                                        </div>
-                                        <div class="book d-flex align-items-center">
-                                            <div class="icon">
-                                                <img src="assets/images/book.png" alt="location">
-                                            </div>
-                                            <span>35 Lesson</span>
-                                        </div>
-                                        <div class="clock d-flex align-items-center">
-                                            <div class="icon">
-                                                <img src="assets/images/Clock.png" alt="clock">
-                                            </div>
-                                            <span>3 Hours</span>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        
                         <div class="col-xl-4 col-md-6">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
@@ -274,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <!-- <a routerLink="/courses" class="button button-lg button--primary">Browse all
@@ -293,7 +261,7 @@
 </section>
 <section class="section feature section section--bg-offwhite-one">
     <div class="container">
-        <h2 class="font-title--md text-center">Why You'll Learn with Tech tutor</h2>
+        <h2 class="font-title--md text-center">Why You'll Learn with Tech Tutorus</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
@@ -309,7 +277,7 @@
                             </path>
                         </svg>
                     </div>
-                    <h5 class="font-title--xs">250k online course</h5>
+                    <h5 class="font-title--xs">250k online courses</h5>
                     <p>
                         All our courses are meticulously crafted to align with current industry trends, ensuring participants stay ahead in their professional careers.
                     </p>
@@ -383,7 +351,7 @@
                         <div class="learning-rules-item">
                             <div class="item-number"><span>02.</span></div>
                             <div class="item-text">
-                                <h6>Find Best Course With Better Filtter.</h6>
+                                <h6>Find Best Course With Better Filter.</h6>
                                 <p>
                                     Unlock your potential with the perfect course. Use Better Filter to streamline your search and find the best courses tailored to your needs.
                                 </p>

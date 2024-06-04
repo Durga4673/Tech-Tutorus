@@ -410,6 +410,7 @@
       "image": "assets/images/data-science-dh.jpg",
       "cuTitle1": "Introduction of Cloud Computing & AWS"
     },
+    
     {
       "title": "Python",
       "image": "assets/images/python-training-emexo.png",
@@ -474,6 +475,74 @@
           "program to convert a tuple to a dictionary"
         ]
       }
+    },
+
+    
+    {
+      "title": "Block Chain",
+      "image": "assets/images/blockchain-technology.jpg",
+      "reruirments": "In this course requirements are minimal, typically including the installation of the Python interpreter and a text editor or integrated development environment (IDE). Additionally, familiarity with basic programming concepts such as variables, data types, loops, and functions is beneficial for learning Python effectively.",
+      "description": "Python is a versatile programming language known for its simplicity and readability, making it ideal for various applications such as web development, data analysis, artificial intelligence, and automation. With its extensive libraries and frameworks, Python enables developers to build scalable and robust solutions efficiently, contributing to its widespread adoption in the industry and its role as a go-to language for both beginners and experienced programmers.",
+      "courseFor": "The Python course is designed for individuals seeking to learn programming fundamentals and expand their skills in Python development. It caters to beginners aiming to grasp core concepts like syntax and data structures, as well as to experienced developers looking to deepen their knowledge in areas such as web development, data analysis, or machine learning using Python's extensive libraries and frameworks.",
+      "Ulearn": "In the Python course, participants will learn fundamental programming concepts such as variables, data types, loops, and functions, as well as advanced topics including object-oriented programming and handling exceptions. They will also explore Python's vast ecosystem through hands-on projects, gaining skills in web development, data analysis, automation, and more, making them proficient Python developers. ",
+      "expnList" :{
+        "Installing & Running Python": [
+          "Python 2.7 vs Python 3",
+          "Local Environment Setup",
+          "Installing Python on different Platforms(Windows and Linux)",
+          "Python Interpreter and Python Interactive Shell",
+          " Python IDE(Pydev,Pycharm,VIM)"
+        ],
+        "Introduction": [
+          "Python Overview",
+          "History Of Python",
+          "Cpython,Jython,PyPy",
+          "Python Features",
+          "Areas Of Application of Python",
+          "Understanding More About Python",
+          "Writing your First Python Program",
+          "Interactive Mode Programming",
+          "Script Mode Programming",
+          "Dir and help: Getting help from the Python interpreter."
+        ],
+        "Python Syntax ,Keywords and Operators": [
+          " Python Identifiers",
+          "Various Operators and Operators Precedence",
+          "Reserved Words,Lines and Indentation",
+          "Multi-Line Statements,Quotation in Python",
+          "Comments in Python,Using Blank Lines",
+          "Command Line Arguments",
+          "Python Input/Output:Using the Print Functi",
+          "Getting Input from User",
+          "Python Basic Data Types And Variables"
+        ],
+        "Expressions, Statements, Variables": [
+          "Working With Numbers",
+          "Working With Booleans",
+          "Working with Strings",
+          "String types and formatting",
+          "Program to find duplicate characters in a String.",
+          "Program to reverse a string",
+          "Program to check if String is Palindrome",
+          "program to remove a newline in Python",
+          "Mini Project :",
+          "Dice Rolling Simulator"
+        ],
+        "Python Data Types: List,Tuples,Dictionaries": [
+          "Python Lists,Tuples,Dictionaries",
+          "Accessing Values",
+          "Basic Operations",
+          "Indexing, Slicing, and Matrixes",
+          "Built-in Functions & Methods",
+          "Exercises on List,Tuples And Dictionary",
+          "Remove Duplicate from Lists",
+          "Program to find the index of an item of a ",
+          "Python program to convert a list to a tuple",
+          "Python program to reverse a tuple",
+          "program to convert a tuple to a dictionary"
+        ]
+      }
     }
+
   ]
 }

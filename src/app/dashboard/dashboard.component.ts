@@ -11,6 +11,65 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
 
+  cards = [
+    { 
+      title: 'AWS',
+      imgSrc: 'assets/images/aws-dh.png',
+    },
+    
+    { 
+      title: 'Data Science with Python',
+      imgSrc: 'assets/images/python-datascience-dh.jpg',
+    },
+    { 
+      title: 'Devops',
+      imgSrc: 'assets/images/devops-dh.jpg',
+    },
+    { 
+      title: 'Python',
+      imgSrc: 'assets/images/python-training-emexo.png',
+    },
+    
+    { 
+      title: 'RPA',
+      imgSrc: 'assets/images/RPA-dh.jpg',
+    },
+
+    { 
+      title: 'Salesforce',
+      imgSrc: 'assets/images/salesforce-cloud-logo.jpg'
+    },
+    { 
+      title: 'Selenium',
+      imgSrc: 'assets/images/selenium-dh.png'
+    },
+   
+    { 
+      title: 'Data Science',
+      imgSrc: 'assets/images/data-science-dh.jpg',
+    },
+
+    { 
+      title: 'Block Chain',
+      imgSrc: 'assets/images/blockchain-technology.jpg',
+    },
+
+    { 
+      title: 'Scrum Master',
+      imgSrc: 'assets/images/scrum-master.jpg',
+    },
+    { 
+      title: 'Mule Soft',
+      imgSrc: 'assets/images/mulesoft.jpg',
+    },
+    { 
+      title: 'Power BI',
+      imgSrc: 'assets/images/power-BI.jpg',
+    },
+  
+  ];
+
+
   slides = [
     { img: "assets/images/aws-dh.png", heading: "AWS" },
     { img: "assets/images/python-datascience-dh.jpg", heading: "Data Science With Python" },
@@ -71,6 +130,11 @@ export class DashboardComponent {
       this.slideConfig.slidesToShow = 1; // Show 1 slide below 768px
       this.slideConfig.slidesToScroll = 1; // Scroll 1 item at a time below 768px
     }
+  }
+
+  goToCourseDetail(title: string): void {
+    this.router.navigate(['/courses', title.replace(/\s/g, '-')]);
+    window.scrollTo(0, 0);
   }
 
   navigateToCourses() {

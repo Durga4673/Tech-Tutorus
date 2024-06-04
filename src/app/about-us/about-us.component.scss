@@ -15,8 +15,14 @@ ul {
     border: 1px solid #dddddd;
     padding: 40px 25px;
     transition: all 0.3s ease 0s;
-    max-height: 325px;
+    max-height: 370px;
 }
+
+@media (min-width: 1400px) { 
+    .single-features {
+        max-height: 330px;
+    }
+  }
 
 .mb-30 {
     margin-bottom: 30px;
@@ -252,6 +258,11 @@ li {
         padding-bottom: 30px !important;
     }
 }
+@media (min-width: 991px) and (max-width: 1400px){
+    .service-item {
+        height: 555px !important;
+    }
+}
 
 .about-feature.dark-feature {
     border: 2px solid #25252e;
@@ -284,7 +295,7 @@ p {
 .service-item {
     background: #cdf5fa;
     transition: .5s;
-    height: 400px;
+    height: 440px;
 }
 .service-item:hover {
     margin-top: -10px;
