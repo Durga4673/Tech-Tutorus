@@ -46,7 +46,7 @@ export class DashboardComponent {
    
     { 
       title: 'Data Science',
-      imgSrc: 'assets/images/data-science-dh.jpg',
+      imgSrc: 'assets/images/Tech-tutorus-DataScience.png',
     },
 
     { 
