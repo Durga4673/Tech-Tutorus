@@ -25,10 +25,6 @@ export class RegisterComponentComponent {
   form!: FormGroup;
   submitted = false;
 
-  City: any = ['Java', 'Data Science', 'AWS', 'Python']
-
-  private apiUrl = 'https://script.google.com/macros/s/AKfycbwoL7A03UEfLGTLTDoUYwSYLki0JPy3QCvmw7kCOdkEwWf_PM4DW1T_09ufkmcnUHAJ/exec';
-
 
   constructor(private formBuilder: FormBuilder,
     private http: HttpClient,
@@ -55,8 +51,40 @@ export class RegisterComponentComponent {
     return this.form.controls;
   }
 
-  onSubmit(formData: any): void {
-    this.submitted = true;  
+  // onSubmit(formData: any): void {
+  //   this.submitted = true;  
+  //   if (this.form.invalid) {
+  //     return;
+  //   }
+  //   const fullname = this.form.value.fullname;
+  //   const email = this.form.value.email;
+  //   const mobile = this.form.value.mobile;
+  //   const timeZone = this.form.value.timeZone;
+  //   const courseName = this.form.value.courseName;
+
+  //   this.loading = true; 
+  
+  //   this.service.createSheet(fullname, email, mobile, timeZone, courseName).subscribe({
+  //     next: (res) => {
+  //       this.form.reset();
+  //       this.submitted = false;
+  //       this.loading = false;  
+  //       this.snackBar.open('Form submitted successfully!', 'Close', {
+  //         duration: 3000, 
+  //       });   
+  //    },
+  //     error: (error) => {
+  //       console.log(error);
+  //       this.loading = false;
+  //       this.snackBar.open('An error occurred while submitting the form. Please try again.', 'Close', {
+  //         duration: 3000, 
+  //       });
+  //     }
+  //   });
+  // }
+
+  onSubmit(): void {
+    this.submitted = true;
     if (this.form.invalid) {
       return;
     }
@@ -66,22 +94,33 @@ export class RegisterComponentComponent {
     const timeZone = this.form.value.timeZone;
     const courseName = this.form.value.courseName;
 
-    this.loading = true; 
-  
-    this.service.createSheet(fullname, email, mobile, timeZone, courseName).subscribe({
+
+    const formattedData = {
+      fullName: fullname,
+      email: email,
+      countryCode: mobile.dialCode,  // Only the dial code from the mobile object
+      mobile: mobile.number,         // Only the number from the mobile object
+      timeZone: timeZone,
+      courses: courseName
+    };
+
+    this.loading = true;
+
+    this.service.createUser(formattedData).subscribe({
       next: (res) => {
+        console.log("res", res);
         this.form.reset();
         this.submitted = false;
-        this.loading = false;  
+        this.loading = false;
         this.snackBar.open('Form submitted successfully!', 'Close', {
-          duration: 3000, 
-        });   
-     },
+          duration: 3000,
+        });
+      },
       error: (error) => {
-        console.log(error);
+        console.log("error", error);
         this.loading = false;
         this.snackBar.open('An error occurred while submitting the form. Please try again.', 'Close', {
-          duration: 3000, 
+          duration: 3000,
         });
       }
     });
