@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { SheetService } from '../services/sheet.service';
 import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-
+declare var $: any; // Declare jQuery
 @Component({
   selector: 'app-register-component',
   templateUrl: './register-component.component.html',
@@ -13,15 +13,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class RegisterComponentComponent {
 
-
-  separateDialCode = false;
-	SearchCountryField = SearchCountryField;
 	CountryISO = CountryISO;
   PhoneNumberFormat = PhoneNumberFormat;
-	preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
+	preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.Canada];
+  separateDialCode = true;
   loading: boolean = false;
-
-
   form!: FormGroup;
   submitted = false;
 
@@ -33,16 +29,13 @@ export class RegisterComponentComponent {
   ) {}
 
   ngOnInit(): void {
-    this.form = this.formBuilder.group(
-      {
-        fullname: ['', Validators.required],
-        email: ['', [Validators.required, Validators.email]],
-        mobile: ['', [Validators.required]],
-        timeZone: ['', Validators.required],
-        courseName: ['', [Validators.required]],
-        acceptTerms: [false, Validators.requiredTrue],
-      },
-    );
+    this.form = this.formBuilder.group({
+      fullname: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      mobile: [null, [Validators.required, this.phoneValidator]],
+      timeZone: ['', Validators.required],
+      courseName: ['', Validators.required]
+    });
   }
 
   
@@ -51,55 +44,37 @@ export class RegisterComponentComponent {
     return this.form.controls;
   }
 
-  // onSubmit(formData: any): void {
-  //   this.submitted = true;  
-  //   if (this.form.invalid) {
-  //     return;
-  //   }
-  //   const fullname = this.form.value.fullname;
-  //   const email = this.form.value.email;
-  //   const mobile = this.form.value.mobile;
-  //   const timeZone = this.form.value.timeZone;
-  //   const courseName = this.form.value.courseName;
+  phoneValidator(control: AbstractControl): ValidationErrors | null {
+    const value = control.value;
+    if (value && value.internationalNumber) {
+      if (typeof value.isValidNumber === 'function' && !value.isValidNumber()) {
+        return { phoneValidation: true };
+      }
+      return null;
+    }
+    return { required: true };
+  }
 
-  //   this.loading = true; 
   
-  //   this.service.createSheet(fullname, email, mobile, timeZone, courseName).subscribe({
-  //     next: (res) => {
-  //       this.form.reset();
-  //       this.submitted = false;
-  //       this.loading = false;  
-  //       this.snackBar.open('Form submitted successfully!', 'Close', {
-  //         duration: 3000, 
-  //       });   
-  //    },
-  //     error: (error) => {
-  //       console.log(error);
-  //       this.loading = false;
-  //       this.snackBar.open('An error occurred while submitting the form. Please try again.', 'Close', {
-  //         duration: 3000, 
-  //       });
-  //     }
-  //   });
-  // }
-
+  
   onSubmit(): void {
     this.submitted = true;
     if (this.form.invalid) {
+      this.snackBar.open('Please enter the correct details.', 'Close', {
+        verticalPosition: 'bottom',
+        horizontalPosition: 'right',
+        duration: 3000,
+      });
       return;
     }
-    const fullname = this.form.value.fullname;
-    const email = this.form.value.email;
-    const mobile = this.form.value.mobile;
-    const timeZone = this.form.value.timeZone;
-    const courseName = this.form.value.courseName;
+    const { fullname, email, mobile, timeZone, courseName } = this.form.value;
 
 
     const formattedData = {
       fullName: fullname,
       email: email,
-      countryCode: mobile.dialCode,  // Only the dial code from the mobile object
-      mobile: mobile.number,         // Only the number from the mobile object
+      countryCode: mobile.dialCode,  
+      mobile: mobile.number, 
       timeZone: timeZone,
       courses: courseName
     };
@@ -112,17 +87,29 @@ export class RegisterComponentComponent {
         this.form.reset();
         this.submitted = false;
         this.loading = false;
-        this.snackBar.open('Form submitted successfully!', 'Close', {
+        this.snackBar.open(res.message, 'Close', {
           duration: 3000,
         });
+        $('#successModal').modal('show');
       },
       error: (error) => {
         console.log("error", error);
         this.loading = false;
-        this.snackBar.open('An error occurred while submitting the form. Please try again.', 'Close', {
+        this.snackBar.open(error, 'Close', {
           duration: 3000,
         });
       }
     });
   }
+
+  // simulateSuccessResponse(): void {
+  //   this.form.reset();
+  //   this.submitted = false;
+  //   this.loading = false;
+  //   this.snackBar.open('Form submitted successfully!', 'Close', {
+  //     duration: 3000,
+  //   });
+  //   $('#successModal').modal('show'); // Show the modal on success
+  // }
+  
 }

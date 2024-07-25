@@ -224,3 +224,12 @@ input, button, select, optgroup, textarea {
   .mat-simple-snackbar {
     justify-content: center !important;
   }
+
+  .is-invalid {
+    border-color: #dc3545;
+  }
+  
+  .invalid-feedback {
+    color: #dc3545;
+    display: block;
+  }
