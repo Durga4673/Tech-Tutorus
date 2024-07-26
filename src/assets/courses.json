@@ -59,7 +59,7 @@
       "reruirments": "Salesforce requires a basic understanding of CRM concepts and familiarity with cloud computing principles. Proficiency in navigating software applications and strong communication skills are beneficial. Additionally, knowledge of sales and marketing processes can be advantageous for leveraging Salesforce's capabilities effectively." ,
       "courseFor": "The Salesforce course is designed for individuals aiming to master customer relationship management (CRM) tools and cloud-based solutions. It covers essential topics such as Salesforce administration, customization, and development. Participants will learn to configure Salesforce applications, automate business processes, and analyze data to drive informed decisions. With hands-on projects and real-world scenarios, this course equips learners with the skills needed to succeed in Salesforce-related roles and maximize business productivity.",
       "Ulearn": "In the Salesforce course, you'll gain proficiency in various aspects of Salesforce, including administration, customization, and development. You'll learn how to configure Salesforce applications to meet specific business requirements, automate processes using workflows and triggers, and customize the platform to enhance user experience. Additionally, you'll delve into Salesforce development, mastering Apex programming language and Visualforce pages to build custom applications and extend Salesforce functionality. Through practical projects and hands-on exercises, you'll acquire the skills needed to leverage Salesforce effectively and drive business success.",
-      "image":"assets/images/salesforce-cloud-logo.jpg",
+      "image":"assets/images/Salesforce-New-Img.png",
       "expnList": {
         "Fundamentals of Salesforce" : [
           "CRM basics and cloud computing",
@@ -121,7 +121,7 @@
     },
    
     {
-      "title": "Data Science with Python",
+      "title": "Data Science",
       "description": "The Data Science with Python course offers comprehensive training in utilizing Python for data analysis, machine learning, and statistical modeling. Participants will learn how to manipulate and analyze large datasets, extract valuable insights, and build predictive models using Python's powerful libraries such as NumPy, Pandas, Matplotlib, and scikit-learn. With a focus on practical application and real-world examples, this course equips learners with the skills needed to tackle complex data science projects and drive business decisions through data-driven insights.",
       "reruirments": "The requirements for the Data Science with Python course include a fundamental understanding of statistics and proficiency in programming languages such as Python. Familiarity with concepts related to data manipulation, visualization, and machine learning is essential for effective data analysis." ,
       "courseFor": "The Data Science with Python course is tailored for individuals aiming to enhance their skills in data analysis and machine learning using Python. Whether you're a novice or have prior experience, this course equips you with the tools to tackle real-world data challenges effectively. You'll gain proficiency in data manipulation, statistical analysis, and machine learning algorithms, enabling you to extract valuable insights from complex datasets and drive impactful decisions across various industries.",
@@ -413,7 +413,7 @@
     
     {
       "title": "Python",
-      "image": "assets/images/python-training-emexo.png",
+      "image": "assets/images/python.jpg",
       "reruirments": "In this course requirements are minimal, typically including the installation of the Python interpreter and a text editor or integrated development environment (IDE). Additionally, familiarity with basic programming concepts such as variables, data types, loops, and functions is beneficial for learning Python effectively.",
       "description": "Python is a versatile programming language known for its simplicity and readability, making it ideal for various applications such as web development, data analysis, artificial intelligence, and automation. With its extensive libraries and frameworks, Python enables developers to build scalable and robust solutions efficiently, contributing to its widespread adoption in the industry and its role as a go-to language for both beginners and experienced programmers.",
       "courseFor": "The Python course is designed for individuals seeking to learn programming fundamentals and expand their skills in Python development. It caters to beginners aiming to grasp core concepts like syntax and data structures, as well as to experienced developers looking to deepen their knowledge in areas such as web development, data analysis, or machine learning using Python's extensive libraries and frameworks.",
@@ -481,10 +481,10 @@
     {
       "title": "Block Chain",
       "image": "assets/images/blockchain-technology.jpg",
-      "reruirments": "In this course requirements are minimal, typically including the installation of the Python interpreter and a text editor or integrated development environment (IDE). Additionally, familiarity with basic programming concepts such as variables, data types, loops, and functions is beneficial for learning Python effectively.",
-      "description": "Python is a versatile programming language known for its simplicity and readability, making it ideal for various applications such as web development, data analysis, artificial intelligence, and automation. With its extensive libraries and frameworks, Python enables developers to build scalable and robust solutions efficiently, contributing to its widespread adoption in the industry and its role as a go-to language for both beginners and experienced programmers.",
-      "courseFor": "The Python course is designed for individuals seeking to learn programming fundamentals and expand their skills in Python development. It caters to beginners aiming to grasp core concepts like syntax and data structures, as well as to experienced developers looking to deepen their knowledge in areas such as web development, data analysis, or machine learning using Python's extensive libraries and frameworks.",
-      "Ulearn": "In the Python course, participants will learn fundamental programming concepts such as variables, data types, loops, and functions, as well as advanced topics including object-oriented programming and handling exceptions. They will also explore Python's vast ecosystem through hands-on projects, gaining skills in web development, data analysis, automation, and more, making them proficient Python developers. ",
+      "reruirments":"Five core skills, blockchain architecture, cryptography, programming languages, smart contracts and data structures are required to become a blockchain developer.",
+      "description":"Blockchain is a shared, immutable ledger that stores data in blocks linked together by cryptography. The blocks contain transaction data, a timestamp, and a cryptographic hash of the previous block. The data is chronologically consistent because the chain can't be modified or deleted without network consensus. This makes blockchain a good way to create an unalterable record for tracking transactions, payments, accounts, and other valuable assets.",
+      "courseFor":"Blockchain courses are suitable for people who want to learn about blockchain technology, which is used in cryptocurrency, smart contracts, and decentralized applications (dApps). Blockchain developers need a strong academic background in computer science or mathematics, and many start their careers with degrees in these fields. Whether you have a background as a business specialist or have started to explore this field, you will learn about the revolutionising Blockchain technology.",
+      "Ulearn": "A blockchain development course may also include an overview of various blockchain platforms such as Ethereum, Corda, and Ripple. Alternatively, a block blockchain development tutorial may focus on the study of a singular blockchain platform and the specific programming language used for development on that platform.",
       "expnList" :{
         "Installing & Running Python": [
           "Python 2.7 vs Python 3",
@@ -542,7 +542,182 @@
           "program to convert a tuple to a dictionary"
         ]
       }
+    },
+
+    {
+      "title": "Full Stack",
+      "image": "assets/images/Full-Stack-img.jpg",
+      "reruirments":"Full stack developer courses are comprehensive training programs that equip students with the skills to become proficient web developers. Some courses may require students to have a 12th grade in science with English or an equivalent stream, as well as basic computer skills and knowledge of HTML, CSS, JavaScript, and Git.",
+      "description":"Full stack development is the process of developing both the frontend and backend of applications. Any application has a frontend (user-facing) component and a backend (database and logic) component. The frontend contains the user interface and code related to user interactions with the application.",
+     "courseFor": "The Full Stack Developer—MERN Stack program is a comprehensive six-month course that teaches full-stack development skills from scratch. It is designed for graduates, freshers, and working professionals, including those from non-technical backgrounds, who wish to become full-stack developers.",
+     "Ulearn":"It entails coding details like drop-down menus, fonts, colors, and page layouts. Full-stack developers should also know how to work with front-end technologies like HTML, CSS, and scripting languages such as JavaScript to make websites and applications visually viable and appealing.", 
+     "expnList" :{
+        "Installing & Running Python": [
+          "Python 2.7 vs Python 3",
+          "Local Environment Setup",
+          "Installing Python on different Platforms(Windows and Linux)",
+          "Python Interpreter and Python Interactive Shell",
+          " Python IDE(Pydev,Pycharm,VIM)"
+        ],
+        "Introduction": [
+          "Python Overview",
+          "History Of Python",
+          "Cpython,Jython,PyPy",
+          "Python Features",
+          "Areas Of Application of Python",
+          "Understanding More About Python",
+          "Writing your First Python Program",
+          "Interactive Mode Programming",
+          "Script Mode Programming",
+          "Dir and help: Getting help from the Python interpreter."
+        ],
+        "Python Syntax ,Keywords and Operators": [
+          " Python Identifiers",
+          "Various Operators and Operators Precedence",
+          "Reserved Words,Lines and Indentation",
+          "Multi-Line Statements,Quotation in Python",
+          "Comments in Python,Using Blank Lines",
+          "Command Line Arguments",
+          "Python Input/Output:Using the Print Functi",
+          "Getting Input from User",
+          "Python Basic Data Types And Variables"
+        ],
+        "Expressions, Statements, Variables": [
+          "Working With Numbers",
+          "Working With Booleans",
+          "Working with Strings",
+          "String types and formatting",
+          "Program to find duplicate characters in a String.",
+          "Program to reverse a string",
+          "Program to check if String is Palindrome",
+          "program to remove a newline in Python",
+          "Mini Project :",
+          "Dice Rolling Simulator"
+        ],
+        "Python Data Types: List,Tuples,Dictionaries": [
+          "Python Lists,Tuples,Dictionaries",
+          "Accessing Values",
+          "Basic Operations",
+          "Indexing, Slicing, and Matrixes",
+          "Built-in Functions & Methods",
+          "Exercises on List,Tuples And Dictionary",
+          "Remove Duplicate from Lists",
+          "Program to find the index of an item of a ",
+          "Python program to convert a list to a tuple",
+          "Python program to reverse a tuple",
+          "program to convert a tuple to a dictionary"
+        ]
+      }
+    },
+
+
+    {
+      "title": "Cyber Security",
+      "image": "assets/images/Cyber-Security.png",
+      "reruirments":"Security specialists, analysts, and Web application developers are usually required to hold a bachelor's degree in an area such as computer science, information systems, or programming. Some positions require only an associate degree supported by relevant practical experience.",
+      "description": "Cyber security is essential for many organizations and individuals, including hospitals, large corporations, small businesses, and the military. Computing and information technology occupations, including cybersecurity, rank among the highest-paying and most in-demand careers.",
+      "courseFor": "Cyber security courses can be for anyone interested in improving their online security, whether at home or work, and don't require any prior knowledge. Some courses are designed for beginners, while others can lead to career opportunities in cyber security.",
+      "Ulearn":"Cybersecurity involves everyone and every entity — from you and your neighbors to organizations and companies to governments. It’s considered a fundamental necessity, and in this introduction to cybersecurity course, you’ll learn how to protect yourself and others from online attacks. This is a great starting point for anyone interested in learning cybersecurity but not sure where to start."
+      
+    },
+
+    {
+      "title": "Mule Soft",
+      "image": "assets/images/mulesoft.jpg",
+      "description": "MuleSoft courses teach students how to use MuleSoft's Anypoint Platform to connect applications, data, and devices. The Anypoint Platform is an integration platform that helps businesses create, manage, and integrate application programming interfaces (APIs). APIs are the links that connect different software applications, creating a seamless digital ecosystem.",
+      "reruirments": "One of the main prerequisites for the MuleSoft training is some knowledge of Object-Oriented languages like Java. It's also helpful to understand data formats, such as XML, CSV, and JSON, and integration technologies like HTTP, JMS, JDBC, REST, and SOAP. ",
+      "courseFor": "It will help you learn MuleSoft for Salesforce developers, and ensure you have the right skill set and knowledge span to succeed. In simple terms, the role of MuleSoft Developer in an organization is to design and connect APIs to facilitate multiple applications to communicate with each other. ",
+      "Ulearn": "MuleSoft is a hyper automation platform that helps businesses and IT teams transform processes and experiences. MuleSoft's integration platform enables not only to unlock data across legacy systems, cloud apps and devices but also to make smarter and faster decisions, and offer highly connected experiences for end-users. MuleSoft's Anypoint Platform is now a part of the Salesforce Integration Cloud.",
+      "expnList" :{
+        "Installing & Running Python": [
+          "Python 2.7 vs Python 3",
+          "Local Environment Setup",
+          "Installing Python on different Platforms(Windows and Linux)",
+          "Python Interpreter and Python Interactive Shell",
+          " Python IDE(Pydev,Pycharm,VIM)"
+        ],
+        "Introduction": [
+          "Python Overview",
+          "History Of Python",
+          "Cpython,Jython,PyPy",
+          "Python Features",
+          "Areas Of Application of Python",
+          "Understanding More About Python",
+          "Writing your First Python Program",
+          "Interactive Mode Programming",
+          "Script Mode Programming",
+          "Dir and help: Getting help from the Python interpreter."
+        ],
+        "Python Syntax ,Keywords and Operators": [
+          " Python Identifiers",
+          "Various Operators and Operators Precedence",
+          "Reserved Words,Lines and Indentation",
+          "Multi-Line Statements,Quotation in Python",
+          "Comments in Python,Using Blank Lines",
+          "Command Line Arguments",
+          "Python Input/Output:Using the Print Functi",
+          "Getting Input from User",
+          "Python Basic Data Types And Variables"
+        ],
+        "Expressions, Statements, Variables": [
+          "Working With Numbers",
+          "Working With Booleans",
+          "Working with Strings",
+          "String types and formatting",
+          "Program to find duplicate characters in a String.",
+          "Program to reverse a string",
+          "Program to check if String is Palindrome",
+          "program to remove a newline in Python",
+          "Mini Project :",
+          "Dice Rolling Simulator"
+        ],
+        "Python Data Types: List,Tuples,Dictionaries": [
+          "Python Lists,Tuples,Dictionaries",
+          "Accessing Values",
+          "Basic Operations",
+          "Indexing, Slicing, and Matrixes",
+          "Built-in Functions & Methods",
+          "Exercises on List,Tuples And Dictionary",
+          "Remove Duplicate from Lists",
+          "Program to find the index of an item of a ",
+          "Python program to convert a list to a tuple",
+          "Python program to reverse a tuple",
+          "program to convert a tuple to a dictionary"
+        ]
+      }
+    },
+
+    {
+      "title": "Scrum Master",
+      "image": "assets/images/scrum-master.jpg",
+      "description": "A Scrum master course teaches the fundamentals of Scrum, an agile project management methodology that helps teams manage projects. Scrum master certifications can help candidates become Scrum masters, a type of project manager who uses Scrum to complete projects. Scrum masters are responsible for ensuring that Scrum is implemented correctly, which can include helping organizations set up a Scrum framework, promoting and supporting the process, and helping team members understand Scrum's theory, practice, rules, and values.",
+      "reruirments": "Scrum has evolved into a universally adopted methodology across nearly all global organizations. These organizations hire Scrum Masters to guarantee that they fully adopt and leverage Scrum's benefits. By employing skilled Scrum Masters, companies aim to maximize the effectiveness and efficiency of their teams. This role is critical in helping organizations implement the Scrum framework correctly, ensuring its principles and practices are understood and applied to achieve optimal performance and outcomes. This way, Scrum Masters drive project success and enhance organizational productivity. ",
+      "courseFor": "A Scrum Master is a key role within the Scrum framework, acting primarily as a facilitator and coach for a Scrum team. The Scrum Master helps the team and the organization adopt and implement Scrum practices effectively, ensuring that the team adheres to the Scrum methodology while remaining flexible and responsive to the team's needs. The role is not that of a traditional project manager or team leader but more of a servant-leader and process owner.",
+      "Ulearn": "Scrum helps people and teams deliver value incrementally in a collaborative way. As an agile framework, Scrum provides just enough structure for people and teams to integrate into how they work, while adding the right practices to optimize for their specific needs."
+      
+    },
+
+    {
+      "title": "Power BI",
+      "image": "assets/images/power-BI.jpg",
+      "description": "Microsoft Power BI is a business analytics platform that helps users visualize and share data insights from multiple sources. It's a collection of software tools, apps, and connectors that can transform data into interactive dashboards and reports. Power BI can connect to a variety of data sources, including Excel spreadsheets, cloud-based data warehouses, and on-premises hybrid data warehouses. ",
+      "reruirments": "No amount of knowledge can ever compare to the power of firsthand experience. The same is true for Power BI developers. The prerequisites for a Power BI developer include experience using BI tools and systems. They also need to be able to implement security, write DAX expressions, and create rich dashboards.",
+      "courseFor": "The Analyzing and Visualizing Data with Power BI course thus will be dealing with the Power BI tool and will help the participants in preparing data and dashboards along with reports. The course will be helpful if the applicant is- financial analyst, marketing analyst, beginner academic, data analyst or a researcher.",
+      "Ulearn": "Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses."
+      
+    },
+
+    {
+      "title": "UI UX Design",
+      "image": "assets/images/UI-UX-Design.jpg",
+      "description": "Attend UX UI Training program by Real-Time Experts with Real-Time Scenarios. Learn everything from the ground up to comprehending and building various websites with UI/UX skills. User Experience, or UX, is the term used to describe how users interact with products (websites, apps, etc.); this includes how easy they are to use, comprehend, and comprehend. The process of creating and refining high-quality user-product interactions is known as user experience design. Research, testing, development, and content creation are all part of the process of creating a high-quality user-product interaction. The design of websites, computers, appliances, mobile communication devices, and apps with an emphasis on user experience and interaction is known as user interface, or user interface engineering.",
+      "reruirments": "If you are pursuing a career in UX/UI design, coding is not an essential requirement. To become a UI UX designer, you need to have a knack for visual design, an understanding of the psychology of human-computer interaction, and knowledge of web design combined with strong creative and technical skills.",
+      "courseFor": "UI/UX courses are designed for beginners and aspiring designers, as well as students, professionals, or anyone who is passionate about creating digital experiences. No prior design experience is required.",
+      "Ulearn": "If you are passionate about creating exceptional user experiences and want to gain a competitive edge in the industry, a UI/UX design course can provide the necessary knowledge, skills, and networking opportunities to accelerate your career in this dynamic field."
+      
     }
+
+
 
   ]
 }

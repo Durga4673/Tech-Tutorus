@@ -19,7 +19,7 @@
                     {{ courseDetails?.title }}
                 </h3>
             </div>
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
                 <div class="icon-with-date d-flex align-items-lg-center">
                     <div class="icon-with-date-start d-flex align-items-center">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
                         <p class="font-para--md">35 Lesson</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -62,7 +62,7 @@
                 <div class="course-overview">
                     <!-- Thumbnails -->
                     <div class="course-overview-image">
-                        <img [src]="courseDetails?.image" alt="img">
+                        <img [src]="courseDetails?.image" [alt]="courseDetails?.title">
                     </div>
                     
                     <ul class="nav course-overview-nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -194,9 +194,9 @@
                 <div class="courseCard--wrapper" style="padding-top: 35px;">
                     <div class="cart">
                         
-                        <div class="cart__checkout-process">
+                        <!-- <div class="cart__checkout-process">
                             <p class="time-left mb-3"><span>5 hours</span> to remaining this price</p>
-                        </div>
+                        </div> -->
                         <div class="cart__includes-info">
                             <h6 class="font-title--card">This course includes:</h6>
                             <ul>
@@ -206,7 +206,7 @@
                                 </li>
                                 <li>
                                     <span><i class="fa-regular fa-credit-card"></i></span>
-                                    <p class="font-para--md">30 Days Money Back Guarantee</p>
+                                    <p class="font-para--md">10 Days Money Back Guarantee</p>
                                 </li>
                                 <li>
                                     <span><i class="fa-solid fa-file-circle-plus"></i></span>
@@ -226,27 +226,27 @@
                             <h6 class="font-title--card">Share This Course</h6>
                             <ul class="social-icons social-icons--outline">
                                 <li>
-                                    <a href="javascript:void(0)">
+                                    <a href="https://www.instagram.com/techtutorus?igsh=MW51OHk5czgycDd6NQ==" target="_blank">
                                         <i class="fa-brands fa-instagram fill-black" ></i>
                                       </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">  
+                                    <a href="https://www.facebook.com/TechTutorus" target="_blank">  
                                         <i class="fa-brands fa-facebook-f fill-black"></i> 
                                      </a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/techtutorus">
+                                    <a href="https://x.com/techtutorus" target="_blank">
                                         <i class="fa-brands fa-twitter fill-black"></i>
                                       </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">
+                                    <a href="https://www.youtube.com/channel/UC13_5nImCVtSBzWfTI944Ww" target="_blank">
                                         <i class="fa-brands fa-youtube fill-black"></i>
                                       </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">
+                                    <a href="https://www.linkedin.com/company/techtutorus" target="_blank">
                                         <i class="fa-brands fa-linkedin-in fill-black"></i>
                                     </a>
                                 </li>
@@ -272,12 +272,10 @@
                                 <ngx-slick-carousel class="carousel col-12" #slickModal="slick-carousel" [config]="slideConfig">
                                     <div ngxSlickItem *ngFor="let slide of slides" class="slide mb-4 col-md-4 col-sm-6" style="margin-right: 12px;">
                                       <div class="card mx-auto card-hover ">
-                                        <img class="card-img-top" [src]="slide.img" alt="Card image cap" style="max-height: 230px;">
+                                        <img class="card-img-top" [src]="slide.img" alt="Card image cap">
                                         <div class="card-body">
                                           <h5 class="card-title text-center">{{ slide.heading }}</h5>
-                                         
                                         </div>
-
                                       </div>
                                     </div>
                                   </ngx-slick-carousel>

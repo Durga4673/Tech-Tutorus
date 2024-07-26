@@ -18,16 +18,12 @@ export class CoursesComponent {
     },
     
     { 
-      title: 'Data Science with Python',
-      imgSrc: 'assets/images/python-datascience-dh.jpg',
-    },
-    { 
       title: 'Devops',
       imgSrc: 'assets/images/devops-dh.jpg',
     },
     { 
       title: 'Python',
-      imgSrc: 'assets/images/python-training-emexo.png',
+      imgSrc: 'assets/images/python.jpg',
     },
     
     { 
@@ -37,7 +33,7 @@ export class CoursesComponent {
 
     { 
       title: 'Salesforce',
-      imgSrc: 'assets/images/salesforce-cloud-logo.jpg'
+      imgSrc: 'assets/images/Salesforce-New-Img.png'
     },
     { 
       title: 'Selenium',
@@ -46,7 +42,7 @@ export class CoursesComponent {
    
     { 
       title: 'Data Science',
-      imgSrc: 'assets/images/data-science-dh.jpg',
+      imgSrc: 'assets/images/Tech-tutorus-DataScience.png',
     },
 
     { 
@@ -66,6 +62,21 @@ export class CoursesComponent {
       title: 'Power BI',
       imgSrc: 'assets/images/power-BI.jpg',
     },
+    { 
+      title: 'Full Stack',
+      imgSrc: 'assets/images/Full-Stack-img.jpg',
+    },
+
+    { 
+      title: 'Cyber Security',
+      imgSrc: 'assets/images/Cyber-Security.png',
+    },
+
+    { 
+      title: 'UI UX Design',
+      imgSrc: 'assets/images/UI-UX-Design.jpg',
+    },
+  
   
   ];
 

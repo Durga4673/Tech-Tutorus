@@ -4,6 +4,7 @@ import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl, Valid
 import { SheetService } from '../services/sheet.service';
 import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 declare var $: any; // Declare jQuery
 @Component({
@@ -25,7 +26,8 @@ export class RegisterComponentComponent {
   constructor(private formBuilder: FormBuilder,
     private http: HttpClient,
     private service : SheetService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -55,12 +57,15 @@ export class RegisterComponentComponent {
     return { required: true };
   }
 
-  
+  goHome(): void {
+    this.router.navigate(['/']);
+  }
+
   
   onSubmit(): void {
     this.submitted = true;
     if (this.form.invalid) {
-      this.snackBar.open('Please enter the correct details.', 'Close', {
+      this.snackBar.open('Please Enter Your Correct Details.', 'Close', {
         verticalPosition: 'bottom',
         horizontalPosition: 'right',
         duration: 3000,
@@ -68,13 +73,13 @@ export class RegisterComponentComponent {
       return;
     }
     const { fullname, email, mobile, timeZone, courseName } = this.form.value;
-
+    const cleanedMobileNumber = mobile.number.replace(/\s+/g, '');
 
     const formattedData = {
       fullName: fullname,
       email: email,
       countryCode: mobile.dialCode,  
-      mobile: mobile.number, 
+      mobile:cleanedMobileNumber, 
       timeZone: timeZone,
       courses: courseName
     };
@@ -92,10 +97,9 @@ export class RegisterComponentComponent {
         });
         $('#successModal').modal('show');
       },
-      error: (error) => {
-        console.log("error", error);
+      error: (res) => {
         this.loading = false;
-        this.snackBar.open(error, 'Close', {
+        this.snackBar.open(res.error, 'Close', {
           duration: 3000,
         });
       }

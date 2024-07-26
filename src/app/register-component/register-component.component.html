@@ -88,16 +88,16 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="successModalLabel">Submission Successful</h5>
+        <h5 class="modal-title" id="successModalLabel">Successful</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <p>Thanks for submitting your data. <br>
-           Our team will get back to you.</p>
+      <div class="modal-body text-center">
+        <img src="assets/images/thankU.png" alt="Success Image" class="img-fluid">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"  (click)="goHome()" data-bs-dismiss="modal">Home</button>
       </div>
     </div>
   </div>
 </div>
+

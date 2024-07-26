@@ -1,6 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 
@@ -18,16 +16,12 @@ export class DashboardComponent {
     },
     
     { 
-      title: 'Data Science with Python',
-      imgSrc: 'assets/images/python-datascience-dh.jpg',
-    },
-    { 
       title: 'Devops',
       imgSrc: 'assets/images/devops-dh.jpg',
     },
     { 
       title: 'Python',
-      imgSrc: 'assets/images/python-training-emexo.png',
+      imgSrc: 'assets/images/python.jpg',
     },
     
     { 
@@ -37,7 +31,7 @@ export class DashboardComponent {
 
     { 
       title: 'Salesforce',
-      imgSrc: 'assets/images/salesforce-cloud-logo.jpg'
+      imgSrc: 'assets/images/Salesforce-New-Img.png'
     },
     { 
       title: 'Selenium',
@@ -66,22 +60,40 @@ export class DashboardComponent {
       title: 'Power BI',
       imgSrc: 'assets/images/power-BI.jpg',
     },
+    { 
+      title: 'Full Stack',
+      imgSrc: 'assets/images/Full-Stack-img.jpg',
+    },
+    { 
+      title: 'Cyber Security',
+      imgSrc: 'assets/images/Cyber-Security.png',
+    },
+
+    { 
+      title: 'UI/UX Design',
+      imgSrc: 'assets/images/UI-UX-Design.jpg',
+    },
   
   ];
 
 
   slides = [
+    { img: "assets/images/Tech-tutorus-DataScience.png", heading: "Data Science" },
+    { img: "assets/images/Salesforce-New-Img.png", heading: "Saleforce" },
     { img: "assets/images/aws-dh.png", heading: "AWS" },
-    { img: "assets/images/python-datascience-dh.jpg", heading: "Data Science With Python" },
     { img: "assets/images/devops-dh.jpg", heading: "Devops" },
-    { img: "assets/images/python-training-emexo.png", heading: "Python" },
+    { img: "assets/images/python.jpg", heading: "Python" },
     { img: "assets/images/RPA-dh.jpg", heading: "RPA" },
-    { img: "assets/images/salesforce-cloud-logo.jpg", heading: "Saleforce" },
     { img: "assets/images/selenium-dh.png", heading: "Selenium" },
     { img: "assets/images/blockchain-technology.jpg", heading: "Block Chain" },
     { img: "assets/images/scrum-master.jpg", heading: "Scrum Master" },
     { img: "assets/images/mulesoft.jpg", heading: "Mule Soft" },
     { img: "assets/images/power-BI.jpg", heading: "Power BI" },
+    { img: "assets/images/Full-Stack-img.jpg", heading: "Full Stack" },
+    { img: "assets/images/Cyber-Security.png", heading: "Cyber Security" },
+    { img: "assets/images/UI-UX-Design.jpg", heading: "UI/UX Design" },
+
+
 ];
   slideConfig = {
     "slidesToShow": 4, 
@@ -149,7 +161,7 @@ export class DashboardComponent {
     window.scrollTo(0, 0);
     
     // Navigate to the "/courses" route
-    this.router.navigate(['/registerUS']);
+    this.router.navigate(['/register']);
   }
 }
 

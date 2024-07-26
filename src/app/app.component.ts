@@ -11,7 +11,6 @@ import { filter, map, mergeMap } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent  implements OnInit {
-  title = 'tech-Tutors';
 
   constructor( private _dialog : MatDialog,
     private titleService: Title,
@@ -29,7 +28,7 @@ export class AppComponent  implements OnInit {
       }),
       mergeMap(route => route.data)
     ).subscribe(event => {
-      const title = event['title'] ? `Tech-Tutorus | ${event['title']}` : 'Tech-Tutorus';
+      const title = event['title'] ? `TechTutorus | ${event['title']}` : 'TechTutorus';
       this.titleService.setTitle(title);
     });
   }

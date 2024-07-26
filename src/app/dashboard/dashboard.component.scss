@@ -177,6 +177,10 @@
   .browse-categories-shape {
     display: none;
   }
+
+  .cardFeature{
+    max-height: 350px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
@@ -419,7 +423,10 @@ a, a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
 }
 
 .button--orange{
-  background-color: #FFCD82;
+  background-color: #000000;
+  color: #FFCD82 !important;
+  font-weight: bold !important;
+  cursor: pointer;
 }
 .button {
   display: inline-block;
@@ -671,16 +678,35 @@ a, a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
   .browse-categories-shape {
     display: none;
   }
+
+  .cardFeature{
+    max-height: 350px;
+  }
+  
+}
+
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+ 
+  .cardFeature{
+    max-height: 315px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .browse-categories-shape {
     display: none;
   }
+  .cardFeature{
+    max-height: 350px;
+  }
 }
 
 @media (max-width: 420px) {
   .browse-categories-shape {
     display: none;
+  }
+  .cardFeature{
+    max-height: 350px;
   }
 }

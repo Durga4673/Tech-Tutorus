@@ -108,8 +108,7 @@ export class CourseDetailComponent {
 
   slides = [
     { img: "assets/images/Tech-tutorus-DataScience.png", heading: "Data Science" },
-    { img: "assets/images/python-datascience-dh.jpg", heading: "Data Science With Python" },
-    { img: "assets/images/salesforce-cloud-logo.jpg", heading: "Saleforce" },
+    { img: "assets/images/Salesforce-New-Img.png", heading: "Saleforce" },
     { img: "assets/images/aws-dh.png", heading: "AWS" },
     { img: "assets/images/RPA-dh.jpg", heading: "RPA" },
     { img: "assets/images/selenium-dh.png", heading: "Selenium" },
