@@ -1,5 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
+interface BlogPost {
+  title: string;
+  imageUrl: string;
+  date: string;
+  content: string;
+}
+
+interface BlogArticlesResponse {
+  articles: BlogPost[];
+}
 
 @Component({
   selector: 'app-blog',
@@ -8,55 +20,38 @@ import { Router } from '@angular/router';
 })
 export class BlogComponent {
 
-  blogPosts = [
-    {
-      title: 'Good ways to set mind while Studying',
-      imageUrl: 'assets/images/item5.jpg',
-      date: 'Dec 1, 2024',
-      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
-    },
 
-    {
-      title: 'Education Is For Human Greatness And Achievments',
-      imageUrl: 'assets/images/blog2.jpg',
-      date: 'Dec 3, 2024',
-      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
-    },
-    
-    {
-      title: 'Education Is For Human Greatness And Achievments',
-      imageUrl: 'assets/images/blog3.jpg',
-      date: 'Dec 9, 2024',
-      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
-    },
-    {
-      title: 'Good ways to set mind while Studying',
-      imageUrl: 'assets/images/blog4.jpg',
-      date: 'Dec 1, 2024',
-      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
-    },
-    
-    {
-      title: 'Education Is For Human Greatness And Achievments',
-      imageUrl: 'assets/images/blog5.jpg',
-      date: 'Dec 1, 2024',
-      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
-    },
-    
-    {
-      title: 'The State Of Learn And Develop Tips In 2020',
-      imageUrl: 'assets/images/blog6.jpg',
-      date: 'Dec 1, 2024',
-      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
-    },
+  blogPosts: BlogPost[] = [];
 
-  ];
 
-  constructor(private router: Router) {}
+  // blogPosts = [
+  //   {
+  //     title: 'Importance of Learning an Artificial Intelligence',
+  //     imageUrl: 'assets/images/AI.png',
+  //     date: 'Dec 1, 2024',
+  //     content: `Artificial Intelligence (AI) is no longer a futuristic concept—it is a present-day reality 
+  //     that is transforming industries, businesses, and daily life. From virtual assistants like Siri and Alexa 
+  //     to self-driving cars and advanced medical diagnostics, AI is revolutionizing how we live and work. 
+  //     As AI continues to shape the future, learning an AI course has become crucial for professionals, students, 
+  //     and tech enthusiasts who wish to stay ahead in their careers.`
+  //   },
 
-  viewCardDetail(title: string): void {
-    const encodedTitle = encodeURIComponent(title.replace(/\s/g, '-'));
-    this.router.navigate(['/blog', encodedTitle]);
+  // ];
+
+  constructor(private http: HttpClient, private router: Router) {}
+
+  ngOnInit(): void {
+    this.http.get<BlogArticlesResponse>('assets/data/blog-posts.json').subscribe(response => {
+      this.blogPosts = response.articles;
+    });
   }
 
+
+  viewCardDetail(post: BlogPost): void {
+    this.router.navigate(['/blog', post.title.replace(/\s/g, '-')], { state: { post } });
+  }
+
+  getShortContent(content: string, length: number = 150): string {
+    return content.length > length ? content.substring(0, length) + '...' : content;
+  }
 }

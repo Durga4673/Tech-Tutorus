@@ -710,3 +710,366 @@ a, a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
     max-height: 350px;
   }
 }
+
+// Banner Slider Responsive Styles
+.image-banner-slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background: #f8f9fa;
+
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px; // Default height for desktop
+  }
+
+  .slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      // object-position: center;
+      display: block;
+    }
+  }
+
+ .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent; // <-- transparent background
+  border: 2px solid rgba(255, 255, 255, 0.8); // optional: white border to keep visibility
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; // text/icon color
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none; // no shadow by default
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15); // soft white on hover
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+
+  &.prev {
+    left: 20px;
+  }
+
+  &.next {
+    right: 20px;
+  }
+}
+
+
+  // Dots Navigation
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+
+    button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: #007bff;
+        transform: scale(1.2);
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.8);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Tablet Styles (768px - 1024px)
+@media screen and (max-width: 1024px) {
+  .image-banner-slider {
+    .slider-wrapper {
+      height: 400px;
+    }
+
+    .nav-btn {
+      width: 45px;
+      height: 45px;
+      font-size: 1.3rem;
+
+      &.prev {
+        left: 15px;
+      }
+
+      &.next {
+        right: 15px;
+      }
+    }
+
+    .dots {
+      bottom: 15px;
+
+      button {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+// Mobile Landscape (481px - 767px)
+@media screen and (max-width: 767px) {
+  .image-banner-slider {
+    .slider-wrapper {
+      height: 300px;
+    }
+
+    .nav-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+
+      &.prev {
+        left: 10px;
+      }
+
+      &.next {
+        right: 10px;
+      }
+    }
+
+    .dots {
+      bottom: 12px;
+      gap: 6px;
+
+      button {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+// Mobile Portrait (320px - 480px)
+@media screen and (max-width: 480px) {
+  .image-banner-slider {
+    .slider-wrapper {
+      height: 250px;
+    }
+
+    .nav-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+
+      &.prev {
+        left: 8px;
+      }
+
+      &.next {
+        right: 8px;
+      }
+    }
+
+    .dots {
+      bottom: 10px;
+      gap: 5px;
+
+      button {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}
+
+// Extra Small Devices (below 320px)
+@media screen and (max-width: 319px) {
+  .image-banner-slider {
+    .slider-wrapper {
+      height: 200px;
+    }
+
+    .nav-btn {
+      width: 30px;
+      height: 30px;
+      font-size: 0.9rem;
+
+      &.prev {
+        left: 5px;
+      }
+
+      &.next {
+        right: 5px;
+      }
+    }
+
+    .dots {
+      bottom: 8px;
+      gap: 4px;
+
+      button {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+}
+
+// Large Desktop (1440px and above)
+@media screen and (min-width: 1440px) {
+  .image-banner-slider {
+    .slider-wrapper {
+      height: 600px;
+    }
+
+    .nav-btn {
+      width: 60px;
+      height: 60px;
+      font-size: 1.8rem;
+
+      &.prev {
+        left: 30px;
+      }
+
+      &.next {
+        right: 30px;
+      }
+    }
+
+    .dots {
+      bottom: 25px;
+      gap: 10px;
+
+      button {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+// Ultra-wide screens (1920px and above)
+@media screen and (min-width: 1920px) {
+  .image-banner-slider {
+    .slider-wrapper {
+      height: 700px;
+    }
+
+    .nav-btn {
+      width: 70px;
+      height: 70px;
+      font-size: 2rem;
+
+      &.prev {
+        left: 40px;
+      }
+
+      &.next {
+        right: 40px;
+      }
+    }
+
+    .dots {
+      bottom: 30px;
+      gap: 12px;
+
+      button {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+// Touch-specific styles for better mobile interaction
+@media (hover: none) and (pointer: coarse) {
+  .image-banner-slider {
+    .nav-btn {
+      opacity: 0.8;
+      
+      &:active {
+        opacity: 1;
+        transform: translateY(-50%) scale(0.9);
+      }
+    }
+
+    .dots button {
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: currentColor;
+        border-radius: 50%;
+      }
+
+      &.active::before {
+        background: #007bff;
+      }
+    }
+  }
+}
+
+// High DPI displays
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .image-banner-slider {
+    .slide img {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: optimize-contrast;
+    }
+  }
+}
+
+// Reduced motion preferences
+@media (prefers-reduced-motion: reduce) {
+  .image-banner-slider {
+    .slider-track {
+      transition: none;
+    }
+
+    .nav-btn,
+    .dots button {
+      transition: none;
+    }
+  }
+}

@@ -6,5 +6,5 @@
 
 export const environment = {
   production: true,
-  apiUrl: 'https://5iv3w7x7amqxz5atfriupzcduy0djhnx.lambda-url.us-east-1.on.aws/createUser?env=\'prod\''
+  apiUrl: 'https://5iv3w7x7amqxz5atfriupzcduy0djhnx.lambda-url.us-east-1.on.aws/createUser?env=prod'
 };

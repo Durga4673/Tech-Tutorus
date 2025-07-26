@@ -9,71 +9,126 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
 
+
+  currentSlideIndex = 0;
+
+  bannerImages = [
+  'assets/images/banner-image-folder/AWS.jpg',
+  'assets/images/banner-image-folder/Data-Science.jpg',
+  'assets/images/banner-image-folder/Generative-AI.jpg',
+  'assets/images/banner-image-folder/HomePage.jpg',
+  'assets/images/banner-image-folder/Salesforce.jpg',
+
+];
+autoSlideInterval: any;
+autoSlideDelay = 5000; // 5 seconds
+
+ngAfterViewInit() {
+  this.startAutoSlide();
+}
+
+ngOnDestroy() {
+  this.stopAutoSlide();
+}
+
+startAutoSlide() {
+  this.autoSlideInterval = setInterval(() => {
+    this.nextSlide();
+  }, this.autoSlideDelay);
+}
+
+stopAutoSlide() {
+  if (this.autoSlideInterval) {
+    clearInterval(this.autoSlideInterval);
+  }
+}
+
+
+resetAutoSlide() {
+  this.stopAutoSlide();
+  this.startAutoSlide();
+}
+
+nextSlide() {
+  this.currentSlideIndex = (this.currentSlideIndex + 1) % this.bannerImages.length;
+}
+
+
+prevSlide() {
+  this.currentSlideIndex =
+    this.currentSlideIndex === 0 ? this.bannerImages.length - 1 : this.currentSlideIndex - 1;
+}
+
+goToSlide(index: number) {
+  this.currentSlideIndex = index;
+  this.resetAutoSlide();
+}
+
   cards = [
-    { 
+    {
       title: 'AWS',
       imgSrc: 'assets/images/aws-dh.png',
     },
-    
-    { 
+
+    {
       title: 'Devops',
       imgSrc: 'assets/images/devops-dh.jpg',
     },
-    { 
+    {
       title: 'Python',
       imgSrc: 'assets/images/python.jpg',
     },
-    
-    { 
+
+    {
       title: 'RPA',
       imgSrc: 'assets/images/RPA-dh.jpg',
     },
 
-    { 
+    {
       title: 'Salesforce',
       imgSrc: 'assets/images/Salesforce-New-Img.png'
     },
-    { 
+    {
       title: 'Selenium',
       imgSrc: 'assets/images/selenium-dh.png'
     },
-   
-    { 
+
+    {
       title: 'Data Science',
       imgSrc: 'assets/images/Tech-tutorus-DataScience.png',
     },
 
-    { 
+    {
       title: 'Block Chain',
       imgSrc: 'assets/images/blockchain-technology.jpg',
     },
 
-    { 
+    {
       title: 'Scrum Master',
       imgSrc: 'assets/images/scrum-master.jpg',
     },
-    { 
+    {
       title: 'Mule Soft',
       imgSrc: 'assets/images/mulesoft.jpg',
     },
-    { 
+    {
       title: 'Power BI',
       imgSrc: 'assets/images/power-BI.jpg',
     },
-    { 
+    {
       title: 'Full Stack',
       imgSrc: 'assets/images/Full-Stack-img.jpg',
     },
-    { 
+    {
       title: 'Cyber Security',
       imgSrc: 'assets/images/Cyber-Security.png',
     },
 
-    { 
+    {
       title: 'UI/UX Design',
       imgSrc: 'assets/images/UI-UX-Design.jpg',
     },
-  
+
   ];
 
 
@@ -94,17 +149,19 @@ export class DashboardComponent {
     { img: "assets/images/UI-UX-Design.jpg", heading: "UI/UX Design" },
 
 
-];
+  ];
+
+
   slideConfig = {
-    "slidesToShow": 4, 
-    "slidesToScroll": 1, 
-    'autoplay': true, 
-    'autoplaySpeed': 1000, 
-    'dots': true, 
-    'infinite': true, 
+    "slidesToShow": 4,
+    "slidesToScroll": 1,
+    'autoplay': true,
+    'autoplaySpeed': 1000,
+    'dots': true,
+    'infinite': true,
     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>',
     nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
-    responsive:[
+    responsive: [
       {
         breakpoint: 1024, // Tablet breakpoint
         settings: {
@@ -152,14 +209,14 @@ export class DashboardComponent {
   navigateToCourses() {
     // Scroll to the top of the page
     window.scrollTo(0, 0);
-    
+
     // Navigate to the "/courses" route
     this.router.navigate(['/courses']);
   }
 
-  navigateToRegister(){
+  navigateToRegister() {
     window.scrollTo(0, 0);
-    
+
     // Navigate to the "/courses" route
     this.router.navigate(['/register']);
   }
